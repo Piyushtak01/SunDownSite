@@ -253,6 +253,8 @@ body {
     line-height: 4vw;
 }
 
+
+
 #bottom-part2 {
     width: 20%;
 }
@@ -272,14 +274,103 @@ body {
     width: 30vw;
     position: absolute;
     border-radius: 50%;
-    background-color: #FE320A;
+    background: linear-gradient(to top right, #FE320A, #FE740A);
     top: 58%;
     left: 22%;
-    filter:blur(20px);
+    filter: blur(20px);
+    animation: anime2 6s infinite ease-in-out alternate;
 }
 
-#page3{
-    height: 100vh;
+@keyframes anime2 {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%)skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%)skew(-15deg);
+    }
+}
+
+
+#gola2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position:absolute;
+    background-color: #FE320A;
+    align-items: center;
+    justify-content: space-between;
+    left: 35px;
+    margin-top: 1px;
+}
+
+h5 {
+    background-color: #EFEAE3;
+    font-weight: 300;
+    padding-left: 50px;
+}
+
+
+
+#page3 {
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
+.elem {
+    height: 130px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #0000004F;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+    align-items: flex-end;
+}
+
+#page3 h4{
+    height: 0;
+    width: 0;
+    position: relative;
+    font-size: 15px;
+    font-weight: 200;
+    left: 65%;
+}
+
+.elem #overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s
+}
+
+.elem:hover #overlay {
+    top: 0;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    z-index: 99;
+    border-radius: 10px;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
