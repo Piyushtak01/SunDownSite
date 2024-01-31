@@ -1,3 +1,6 @@
 # SunDownSite
 HTML ,CSS ,JavaScript 
-An Animated Website using CSS animation 
+
+A Responsive website using HTMl,CSS , Javascript 
+
+With CSS animation 
